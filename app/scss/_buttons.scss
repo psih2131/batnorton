@@ -1,0 +1,48 @@
+.btnV1 {
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 100%;
+    /* identical to box height, or 14px */
+    padding: 16px 24px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid $blackColor;
+    color: $blackColor;
+    transition: all ease 0.3s;
+    background: $whiteColor;
+
+    &:hover {
+        color: $whiteColor;
+        background: $blackColor;
+        transition: all ease 0.3s;
+    }
+}
+
+.btnV2 {
+    font-weight: 550;
+    font-size: 14px;
+    line-height: 100%;
+    /* identical to box height, or 14px */
+    padding: 16px 24px;
+    text-align: center;
+    text-transform: uppercase;
+    border: 1px solid $blackColor;
+    color: $whiteColor;
+    background: $blackColor;
+    transition: all ease 0.3s;
+
+    &:hover {
+        color: $blackColor;
+        background: $whiteColor;
+        transition: all ease 0.3s;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .btnV1 {
+        padding: 16px;
+        font-weight: 550;
+        font-size: 14px;
+        line-height: 100%;
+    }
+}

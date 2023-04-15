@@ -1,0 +1,312 @@
+.welcome-sec {
+    padding-top: 24px;
+    padding-bottom: 80px;
+}
+
+.welcome-sec__categoru_container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-between;
+    width: calc(100% + 16px);
+    margin-left: -8px;
+    margin-top: 32px;
+}
+
+.welcome-sec__categoru {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: calc(50% - 8px);
+    height: 360px;
+    margin-bottom: 16px;
+    overflow: hidden;
+
+    img {
+        width: 100%;
+        height: 100%;
+        display: block;
+        object-fit: cover;
+        transition: all ease 0.3s;
+
+    }
+
+    &:nth-child(3) {
+        width: 100%;
+    }
+
+    &:hover {
+        img {
+            transform: scale(1.1);
+            transition: all ease 0.3s;
+        }
+    }
+
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.1);
+        /* цвет наложения */
+        z-index: 2;
+        /* положение наложения над изображением */
+    }
+}
+
+.welcome-sec__categoru-tile {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+    font-weight: 550;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    color: $whiteColor;
+}
+
+.welcome-sec__advantages {
+    padding: 80px 0;
+    padding-top: 62px;
+}
+
+.welcome-sec__advantages-title {
+    max-width: 680px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.welcome-sec__advantages-row {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.welcome-sec__advantages-eleent {
+    width: 310px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-left: none;
+    padding: 24px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    p {
+        width: 100%;
+        text-align: center;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 140%;
+        /* identical to box height, or 20px */
+        margin-top: 16px;
+        text-align: center;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+    }
+
+    &:first-child {
+        border-left: 1px solid rgba(0, 0, 0, 0.2);
+    }
+}
+
+.form-container {
+    background: $blackColor;
+    position: relative;
+    padding: 48px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+
+    form {
+        width: 600px;
+        position: relative;
+        z-index: 10;
+    }
+}
+
+.form-container__img {
+    position: absolute;
+    z-index: 1;
+    width: 800px;
+    right: -80px;
+
+    img {
+        width: 100%;
+        display: block;
+    }
+}
+
+.form-container__title {
+    font-weight: 550;
+    font-size: 21px;
+    line-height: 110%;
+    /* or 23px */
+    margin-bottom: 32px;
+    color: $whiteColor;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.form-container__row {
+    display: flex;
+}
+
+.form-container__inp {
+    width: 400px;
+
+    input {
+        width: 100%;
+        background: none;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 16px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        color: $whiteColor;
+        transition: all ease 0.3s;
+
+        &::placeholder {
+            color: $greyColor;
+        }
+
+        &:focus {
+            border: solid 1px $whiteColor;
+            transition: all ease 0.3s;
+        }
+    }
+}
+
+.form-container__send {
+    width: 50px;
+    height: 50px;
+
+    input {
+        width: 100%;
+        height: 100%;
+        font-size: 0;
+        background-color: $whiteColor;
+        border: solid 1px $whiteColor;
+        cursor: pointer;
+        background-image: url('../img/_src/ar-input.svg');
+        background-size: 16px 16px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+}
+
+@media only screen and (max-width: 1320px) {}
+
+@media only screen and (max-width: 1000px) {
+    .welcome-sec__advantages-eleent {
+        width: 33.333%;
+    }
+
+    .welcome-sec__advantages {
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+
+    .welcome-sec {
+        padding-bottom: 50px;
+    }
+
+    .welcome-sec__advantages-row {
+        margin-top: 50px;
+        flex-wrap: wrap;
+    }
+
+
+}
+
+@media only screen and (max-width: 700px) {
+    .welcome-sec__categoru {
+        width: 100%;
+        height: 200px;
+        margin-bottom: 8px;
+    }
+
+    .welcome-sec__categoru-tile {
+        font-weight: 550;
+        font-size: 18px;
+        line-height: 100%;
+    }
+
+    .welcome-sec__advantages-title {
+        width: 100%;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 140%;
+    }
+
+    .welcome-sec__advantages-eleent {
+        width: 100%;
+        border-left: 1px solid rgba(0, 0, 0, .2);
+        padding: 24px 10px;
+        border-bottom: none;
+
+        &:last-child {
+            border-bottom: 1px solid rgba(0, 0, 0, .2);
+        }
+    }
+
+    .welcome-sec__advantages-eleent p {
+        font-size: 12px;
+    }
+
+    .form-container {
+        padding: 32px 24px 48px 24px;
+    }
+
+    .form-container form {
+        width: 100%;
+    }
+
+    .form-container__title {
+        font-weight: 550;
+        font-size: 18px;
+        line-height: 110%;
+        margin-bottom: 32px;
+        text-align: center;
+    }
+
+    .form-container__inp {
+        width: calc(100% - 46px);
+    }
+
+    .form-container__inp input {
+        padding: 16px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 120%;
+        background: #363636;
+        border: solid 1px #363636;
+    }
+
+    .form-container__send {
+        width: 46px;
+        height: 48px;
+    }
+
+    .form-container__img {
+        width: 791px;
+        left: -19.33%;
+        right: -116.94%;
+        top: 9.55%;
+        bottom: -62.75%;
+    }
+}

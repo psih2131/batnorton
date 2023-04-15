@@ -1,0 +1,236 @@
+.delivery-sec {
+    padding-top: 24px;
+    padding-bottom: 32px;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
+.delivery-sec__baner {
+    width: 100%;
+    height: 96px;
+    margin-bottom: 48px;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.delivery-sec__aside {
+    width: 233px;
+}
+
+.delivery-sec__nav {
+    ul {
+        li {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 140%;
+            /* identical to box height, or 20px */
+            margin-bottom: 24px;
+            letter-spacing: 0.02em;
+            text-transform: uppercase;
+
+            a {
+                color: $greyColor;
+            }
+
+        }
+
+        .active-link {
+            text-decoration-line: underline;
+
+            a {
+                color: $blackColor;
+            }
+        }
+    }
+}
+
+.delivery-sec__body {
+    padding-left: 32px;
+    width: calc(100% - 233px);
+}
+
+.delivery-sec__content-wrapper {
+    width: 680px;
+}
+
+.delivery-sec__title {
+    font-weight: 550;
+    font-size: 21px;
+    line-height: 100%;
+    /* or 21px */
+
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+.delivery-sec__content-element {
+    padding: 48px 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
+    &:last-child {
+        border-bottom: none;
+    }
+}
+
+.redactor-container {
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 550;
+        font-size: 16px;
+        line-height: 120%;
+        /* or 19px */
+        margin-bottom: 48px;
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+    }
+
+    .imgV1 {
+        margin-bottom: 48px;
+        height: 64px;
+
+        img {
+            height: 100%;
+            display: block;
+        }
+    }
+
+    p {
+        margin-bottom: 18px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 120%;
+
+        span {
+            color: $greyColor;
+        }
+
+        b {
+            font-weight: 550;
+        }
+    }
+
+    a {
+        color: $redColor;
+    }
+
+    ul {
+        li {
+            padding-left: 12px;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 120%;
+            position: relative;
+            margin-bottom: 8px;
+
+            &:before {
+                width: 6px;
+                height: 6px;
+                position: absolute;
+                content: "";
+                left: 0;
+                background: $blackColor;
+                left: 0;
+                top: 6px;
+                border-radius: 100px;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1320px) {}
+
+@media only screen and (max-width: 1000px) {
+    .delivery-sec__content-wrapper {
+        width: 100%;
+    }
+
+    .delivery-sec__body {
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .redactor-container .imgV1 img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+
+    .delivery-sec__aside {
+        width: 100%;
+    }
+
+    .delivery-sec__nav ul li a {
+        text-decoration: underline;
+    }
+
+    .delivery-sec__nav ul li {
+        margin-bottom: 24px;
+    }
+
+    .delivery-sec__aside {
+        margin-bottom: 28px;
+    }
+
+    .delivery-sec {
+        padding-bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .delivery-sec__title {
+        font-weight: 550;
+        font-size: 18px;
+        line-height: 100%;
+    }
+
+    .delivery-sec__content-element {
+        &:first-child {
+            padding-top: 32px;
+        }
+    }
+
+    .redactor-container .imgV1 img {
+        height: auto;
+    }
+
+    .redactor-container h1,
+    .redactor-container h2,
+    .redactor-container h3,
+    .redactor-container h4,
+    .redactor-container h5,
+    .redactor-container h6 {
+        margin-bottom: 32px;
+        font-weight: 550;
+        font-size: 16px;
+        line-height: 120%;
+    }
+
+    .redactor-container .imgV1 {
+        margin-bottom: 32px;
+    }
+
+    .delivery-sec__aside {
+        margin-bottom: 48px;
+        border-bottom: 1px solid rgba(0, 0, 0, .1);
+
+        ul {
+            padding-bottom: 24px;
+        }
+    }
+
+    .delivery-sec__baner {
+        height: 80px;
+    }
+}
