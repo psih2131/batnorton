@@ -46,7 +46,7 @@
     margin-left: 8px;
     cursor: pointer;
 
-    svg {
+    .svg-icon {
         path {
             fill: $greyColor;
         }
@@ -54,7 +54,7 @@
 }
 
 .catalog-sec__control-btn_active {
-    svg {
+    .svg-icon {
         path {
             fill: $blackColor;
         }

@@ -12,16 +12,6 @@ a {
 	}
 }
 
-li {
-	list-style-type: none;
-}
-
-button {
-	cursor: pointer;
-	outline: 0 none !important;
-
-}
-
 body::-webkit-scrollbar {
 	width: 3px;
 }
@@ -35,111 +25,35 @@ body::-webkit-scrollbar-thumb {
 	outline: 1px solid slategrey;
 }
 
-.slick-slide img:focus {
-	outline: none !important;
+
+.list__element {
+	list-style-type: none;
 }
 
-.slick-slide:focus {
-	outline: none !important;
+.list {
+	margin-bottom: 0;
 }
 
-.towar-box-sec5 a {
-	outline: none !important;
-}
-
-.slick-slide {
-	outline: none !important;
-}
-
-.slick-slide p {
-	outline: none !important;
-}
-
-.slick-slide a {
-	outline: none !important;
-}
-
-.slick-slide div {
-	outline: none !important;
-}
-
-.slick-track {
-	outline: none !important;
-}
-
-input {
-	outline: 0 none !important;
-
-	font-family: $mainFont
-}
-
-input[type=text] {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-}
-
-input[type=tel] {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-}
-
-input[type=email] {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-}
-
-input[type=submit] {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-}
-
-textarea {
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	appearance: none;
-}
-
-button {
+.btn {
 	font-family: $mainFont;
-}
-
-select {
 	cursor: pointer;
 	outline: 0 none !important;
-	font-family: $mainFont;
 }
 
-textarea {
+.input-element {
 	outline: 0 none !important;
 	font-family: $mainFont;
-}
-
-body {
-	background: $whiteColor;
-	font-family: $mainFont;
-	color: $blackColor;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: $mainFont;
-}
-
-ul {
-	margin-bottom: 0;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 }
 
 .app {
 	overflow: hidden;
 	min-width: 260px;
+	background: $whiteColor;
+	font-family: $mainFont;
+	color: $blackColor;
 }
 
 .container {
@@ -147,7 +61,7 @@ ul {
 	margin: 0 auto;
 }
 
-main {
+.main {
 	padding-top: 202px;
 	min-height: calc(100vh - 104px);
 }
@@ -186,7 +100,7 @@ main {
 		padding-right: 20px;
 	}
 
-	main {
+	.main {
 		padding-top: 95px;
 	}
 }

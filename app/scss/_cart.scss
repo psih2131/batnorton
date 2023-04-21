@@ -31,7 +31,7 @@
     width: 115px;
     height: 160px;
 
-    img {
+    .img-element {
         width: 100%;
         height: 100%;
         display: block;
@@ -43,7 +43,7 @@
     cursor: pointer;
     width: 24px;
 
-    svg {
+    .svg-icon {
         width: 100%;
         height: auto;
         display: block;
@@ -54,7 +54,7 @@
     }
 
     &:hover {
-        svg {
+        .svg-icon {
             path {
                 stroke: $redColor;
                 transition: all ease 0.3s;
@@ -81,15 +81,15 @@
     width: 350px;
     letter-spacing: 0.02em;
     text-transform: uppercase;
+}
 
-    a {
-        color: $blackColor;
+.cart-element__link {
+    color: $blackColor;
+    transition: all ease 0.3s;
+
+    &:hover {
+        color: $redColor;
         transition: all ease 0.3s;
-
-        &:hover {
-            color: $redColor;
-            transition: all ease 0.3s;
-        }
     }
 }
 
@@ -120,23 +120,23 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     padding: 8px;
     align-items: center;
+}
 
-    input {
-        width: 38px;
-        text-align: center;
-        font-weight: 700;
-        font-size: 14px;
-        line-height: 100%;
-        /* or 14px */
-        border: none;
-        background: none;
-        letter-spacing: 0.02em;
-        text-transform: uppercase;
-    }
+.cart-element-btn {
+    cursor: pointer;
+}
 
-    div {
-        cursor: pointer;
-    }
+.cart-element__control-input {
+    width: 38px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 100%;
+    /* or 14px */
+    border: none;
+    background: none;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
 }
 
 .cart-sec__down-row {
@@ -150,31 +150,31 @@
     position: relative;
     width: 240px;
 
-    input {
-        width: 100%;
-        padding: 11px 16px;
-        padding-right: 30px;
-        border: 1px solid rgba(0, 0, 0, 0.1);
-        color: $blackColor;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 100%;
-        /* identical to box height, or 12px */
-        position: relative;
-        z-index: 1;
-        letter-spacing: 0.02em;
-        text-transform: uppercase;
-
-        &::placeholder {
-            color: $greyColor;
-        }
-    }
-
-    svg {
+    .svg-icon {
         position: absolute;
         z-index: 10;
         right: 16px;
         top: 12px;
+    }
+}
+
+.cart-sec__promo-input {
+    width: 100%;
+    padding: 11px 16px;
+    padding-right: 30px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    color: $blackColor;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 100%;
+    /* identical to box height, or 12px */
+    position: relative;
+    z-index: 1;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+
+    &::placeholder {
+        color: $greyColor;
     }
 }
 
@@ -188,24 +188,24 @@
 
 .cart-sec__list {
     margin-bottom: 30px;
+}
 
-    li {
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 100%;
-        /* identical to box height, or 14px */
-        letter-spacing: 0.02em;
-        text-transform: uppercase;
-        margin-bottom: 19px;
+.cart-sec__list-element {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    /* identical to box height, or 14px */
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 19px;
+}
 
-        p {
-            color: $greyColor;
-        }
-    }
+.cart-sec__text {
+    color: $greyColor;
 }
 
 .cart-sec__end-price-row {
@@ -213,26 +213,26 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 24px;
+}
 
-    p {
-        font-weight: 400;
-        font-size: 14px;
-        line-height: 100%;
-        /* identical to box height, or 14px */
+.end-price-row__text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    /* identical to box height, or 14px */
 
-        letter-spacing: 0.02em;
-        text-transform: uppercase;
-    }
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
 
-    span {
-        display: inset-block;
-        font-weight: 500;
-        font-size: 24px;
-        line-height: 100%;
-        /* identical to box height, or 24px */
-        font-family: $interFont;
-        letter-spacing: -0.03em;
-    }
+.end-price-row__value {
+    display: inset-block;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 100%;
+    /* identical to box height, or 24px */
+    font-family: $interFont;
+    letter-spacing: -0.03em;
 }
 
 @media only screen and (max-width: 1320px) {}

@@ -14,7 +14,7 @@
     height: 96px;
     margin-bottom: 48px;
 
-    img {
+    .img-element {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -25,30 +25,25 @@
     width: 233px;
 }
 
-.delivery-sec__nav {
-    ul {
-        li {
-            font-weight: 400;
-            font-size: 14px;
-            line-height: 140%;
-            /* identical to box height, or 20px */
-            margin-bottom: 24px;
-            letter-spacing: 0.02em;
-            text-transform: uppercase;
+.delivery-nav-list__element {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    /* identical to box height, or 20px */
+    margin-bottom: 24px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
 
-            a {
-                color: $greyColor;
-            }
+.delivery-nav-list__link {
+    color: $greyColor;
+}
 
-        }
+.active-link {
+    text-decoration-line: underline;
 
-        .active-link {
-            text-decoration-line: underline;
-
-            a {
-                color: $blackColor;
-            }
-        }
+    .delivery-nav-list__link {
+        color: $blackColor;
     }
 }
 
@@ -82,12 +77,7 @@
 
 .redactor-container {
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    .title-element {
         font-weight: 550;
         font-size: 16px;
         line-height: 120%;
@@ -101,33 +91,35 @@
         margin-bottom: 48px;
         height: 64px;
 
-        img {
+        .img-element {
             height: 100%;
             display: block;
         }
     }
 
-    p {
+    .text-element {
         margin-bottom: 18px;
         font-weight: 400;
         font-size: 14px;
         line-height: 120%;
 
-        span {
-            color: $greyColor;
-        }
 
-        b {
+
+        .stront-element {
             font-weight: 550;
         }
     }
 
-    a {
+    .text-element__grey {
+        color: $greyColor;
+    }
+
+    .link-element {
         color: $redColor;
     }
 
-    ul {
-        li {
+    .list {
+        .list__element {
             padding-left: 12px;
             font-weight: 400;
             font-size: 14px;
@@ -201,16 +193,11 @@
         }
     }
 
-    .redactor-container .imgV1 img {
+    .redactor-container .imgV1 .img-element {
         height: auto;
     }
 
-    .redactor-container h1,
-    .redactor-container h2,
-    .redactor-container h3,
-    .redactor-container h4,
-    .redactor-container h5,
-    .redactor-container h6 {
+    .redactor-container .title-element {
         margin-bottom: 32px;
         font-weight: 550;
         font-size: 16px;
@@ -224,10 +211,10 @@
     .delivery-sec__aside {
         margin-bottom: 48px;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
+    }
 
-        ul {
-            padding-bottom: 24px;
-        }
+    .delivery-nav-list {
+        padding-bottom: 24px;
     }
 
     .delivery-sec__baner {

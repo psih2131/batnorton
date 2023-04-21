@@ -47,17 +47,19 @@
     display: flex;
     padding-top: 14px;
 
-    a {
+    .footer__network {
         display: block;
         width: 32px;
         margin-right: 9px;
         margin-left: 0;
-
-        img {
-            width: 100%;
-            display: block;
-        }
     }
+
+    .footer__network-img {
+        width: 100%;
+        display: block;
+    }
+
+
 }
 
 @media only screen and (max-width: 1320px) {}

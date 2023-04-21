@@ -40,13 +40,13 @@
     text-transform: uppercase;
     cursor: pointer;
 
-    img {
+    .img-element {
         opacity: 0;
         transition: all ease 0.3s;
     }
 
     &:hover {
-        img {
+        .img-element {
             opacity: 1;
             transition: all ease 0.3s;
         }
@@ -55,21 +55,21 @@
 
 .location-select__location-body {
     display: none;
+}
 
-    ul {
-        li {
-            color: $whiteColor;
-            cursor: pointer;
-            padding: 5px;
-            font-size: 12px;
-            font-weight: 300;
-            opacity: 0.6;
-        }
-
-        .active-location {
-            opacity: 1;
-        }
+.location-select__list {
+    .active-location {
+        opacity: 1;
     }
+}
+
+.location-select__list-element {
+    color: $whiteColor;
+    cursor: pointer;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: 300;
+    opacity: 0.6;
 }
 
 .store-body {
@@ -88,7 +88,7 @@
     height: 240px;
     margin-bottom: 80px;
 
-    img {
+    .img-element {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -125,12 +125,12 @@
     justify-content: center;
     margin-top: 48px;
 
-    a {
+    .footer__network {
         margin: 0 4px;
         width: 24px;
         display: block;
 
-        img {
+        .footer__network-img {
             width: 100%;
             display: block;
         }
@@ -151,7 +151,7 @@
     margin: 0 8px 16px 8px;
     height: 260px;
 
-    img {
+    .img-element {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -176,7 +176,7 @@
     padding-top: 36px;
     position: relative;
 
-    p {
+    .text-elemetn {
         font-weight: 400;
         font-size: 14px;
         line-height: 120%;
@@ -241,7 +241,7 @@
     align-items: center;
     position: relative;
 
-    img {
+    .img-element {
         width: 100%;
         height: 100%;
         object-fit: cover;
@@ -279,7 +279,7 @@
         padding-bottom: 50px;
     }
 
-    .location-select__location-header img {
+    .location-select__location-header .img-element {
         opacity: 1;
     }
 
@@ -295,7 +295,7 @@
         margin-bottom: 50px;
     }
 
-    .store-body__advantages-element p {
+    .store-body__advantages-element .text-elemetn {
         padding-left: 20px;
         padding-right: 20px;
     }
@@ -359,7 +359,7 @@
         border: none;
     }
 
-    .store-body__advantages-element p {
+    .store-body__advantages-element .text-elemetn {
         padding-left: 0;
         padding-right: 0;
         margin-top: 16px;

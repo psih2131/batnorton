@@ -58,11 +58,11 @@
 .video-popup {
     width: 1200px;
     height: 720px;
+}
 
-    iframe {
-        width: 100%;
-        height: 100%;
-    }
+.video-popup__iframe {
+    width: 100%;
+    height: 100%;
 }
 
 //size popup 
@@ -162,7 +162,7 @@
     margin: 0 auto;
     width: 410px;
 
-    img {
+    .img-element {
         width: 100%;
         display: block;
     }
@@ -230,29 +230,24 @@
 .credit-popup__redactor {
     width: 476px;
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
+    .title-element {
         font-weight: 550;
         font-size: 19.2192px;
         line-height: 19px;
         margin-bottom: 21px;
     }
 
-    p {
+    .text-element {
         font-weight: 400;
         font-size: 19.2192px;
         line-height: 125%;
         margin-bottom: 20px;
     }
 
-    ol {
+    .namber-list {
         padding-left: 20px;
 
-        li {
+        .namber-list__element {
             list-style-type: decimal;
             font-weight: 400;
             font-size: 19.2192px;
@@ -274,7 +269,7 @@
     margin: 0 auto;
     text-align: center;
 
-    a {
+    .link-element {
         color: $blackColor;
     }
 }
@@ -291,7 +286,7 @@
 }
 
 .credit-popup__phone {
-    a {
+    .link-element {
         color: $blackColor;
     }
 }
@@ -326,14 +321,14 @@
             transform: scale(1.1);
         }
     }
+}
 
-    form {
-        margin-top: 21px;
-        width: 100%;
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-    }
+.form-popup__form-wrapper {
+    margin-top: 21px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .form-popup__title {
@@ -358,29 +353,29 @@
 
 .form-popup__inp-wrapper {
     width: calc(50% - 21.5px);
+}
 
-    input {
-        width: 100%;
-        background: #F7F7F7;
-        padding: 13px;
-        border: solid 1px #F7F7F7;
-        font-weight: 400;
-        font-size: 9.77533px;
-        line-height: 120%;
-        /* identical to box height, or 12px */
-        color: $blackColor;
-        letter-spacing: 0.02em;
-        text-transform: uppercase;
+.form-popup__input {
+    width: 100%;
+    background: #F7F7F7;
+    padding: 13px;
+    border: solid 1px #F7F7F7;
+    font-weight: 400;
+    font-size: 9.77533px;
+    line-height: 120%;
+    /* identical to box height, or 12px */
+    color: $blackColor;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    transition: all ease 0.3s;
+
+    &::placeholder {
+        color: #9B9FA1;
+    }
+
+    &:focus {
+        border: solid 1px $redColor;
         transition: all ease 0.3s;
-
-        &::placeholder {
-            color: #9B9FA1;
-        }
-
-        &:focus {
-            border: solid 1px $redColor;
-            transition: all ease 0.3s;
-        }
     }
 }
 
@@ -483,13 +478,13 @@
 .delivery-location {
     margin-bottom: 20px;
     cursor: pointer;
+}
 
-    p {
-        font-weight: 550;
-        font-size: 16px;
-        line-height: 120%;
-        text-transform: uppercase;
-    }
+.delivery-location__text {
+    font-weight: 550;
+    font-size: 16px;
+    line-height: 120%;
+    text-transform: uppercase;
 }
 
 .delivery-location__price {
@@ -613,7 +608,7 @@
         margin-top: -30px;
 
 
-        img {
+        .img-element {
             width: 100%;
             display: block;
 
@@ -662,19 +657,14 @@
         margin-top: 50px;
     }
 
-    .credit-popup__redactor h1,
-    .credit-popup__redactor h2,
-    .credit-popup__redactor h3,
-    .credit-popup__redactor h4,
-    .credit-popup__redactor h5,
-    .credit-popup__redactor h6 {
+    .credit-popup__redactor .title-element {
         font-weight: 550;
         font-size: 19.2192px;
         line-height: 19px;
         margin-bottom: 18px;
     }
 
-    .credit-popup__redactor p {
+    .credit-popup__redactor .text-element {
         font-weight: 400;
         font-size: 16.2192px;
         line-height: 125%;
@@ -685,7 +675,7 @@
         margin-bottom: 15px;
     }
 
-    .credit-popup__redactor ol li {
+    .credit-popup__redactor .namber-list .namber-list__element {
         font-weight: 400;
         font-size: 16.2192px;
         line-height: 125%;
@@ -737,7 +727,7 @@
         height: 500px;
     }
 
-    .delivery-location p {
+    .delivery-location .delivery-location__text {
         font-size: 14px;
     }
 }
@@ -768,7 +758,7 @@
         padding: 5px;
     }
 
-    .cart-element__control input {
+    .cart-element__control-input {
         font-size: 12px;
     }
 
@@ -785,7 +775,7 @@
         padding-top: 25px;
     }
 
-    .cart-sec__list li {
+    .cart-sec__list .cart-sec__list-element {
         font-size: 12px;
     }
 
